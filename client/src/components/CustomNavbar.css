@@ -1,0 +1,13 @@
+.item {
+  color: black;
+  font-size: initial;
+}
+
+.image-logo {
+  max-width: auto;
+  width: 15rem;
+}
+
+.navItems {
+  margin-left: auto;
+}
