@@ -2,6 +2,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import "./CustomNavbar.css";
 
+
 class CustomNavbar extends React.Component {
   render() {
     return (

@@ -1,11 +1,19 @@
 import React from "react";
-// import Contact from "../Form";
+import Contact from "../Contact";
 import { Container, Row, Col } from "react-bootstrap";
 
 const ContactUs = () => {
   return (
     <div>
-      <h1>Contact Us</h1>
+      <br />
+      <br />
+      <Container>
+        <Row>
+          <Col md={{ span: 6, offset: 1 }}>
+            <Contact />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
