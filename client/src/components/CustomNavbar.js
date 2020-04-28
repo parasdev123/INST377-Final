@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./CustomNavbar.css";
 
@@ -9,40 +8,21 @@ class CustomNavbar extends React.Component {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="light"
+        bg="dark"
         variant="dark"
         className="navbar"
         sticky="top"
       >
-        <Navbar.Brand>
-          <Link to="/">
-            {/* <img className="image-logo" src={logo} alt="to home page" /> */}
-          </Link>
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          style={{ backgroundColor: "#cccccc" }}
+          style={{ backgroundColor: "Grey" }} // Find a better color for the toggle to be when collapsed
         />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <div className="navItems">
-            <Nav>
-              <Nav.Link>
-                <Link to="/" className="item">
-                  Home
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/pages/about" className="item">
-                  About
-                </Link>
-              </Nav.Link>
-              <Nav.Link>
-                <Link to="/pages/contactus" className="item">
-                  Contact Us
-                </Link>
-              </Nav.Link>
-            </Nav>
-          </div>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/pages/about">About</Nav.Link>
+            <Nav.Link href="/pages/contactus">Contact Us</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
     );
