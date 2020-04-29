@@ -1,9 +1,5 @@
 import React from "react";
-import { Card, CardGroup, Accordion, Button } from "react-bootstrap";
-import PoliceStation from "../components/Maps/PoliceStation";
-import FireStation from "../components/Maps/FireStation";
-import Libraries from "../components/Maps/Libraries";
-import RecCenter from "../components/Maps/RecCenter";
+import { Card, CardGroup } from "react-bootstrap";
 
 // Replace Lorem words with facts and imfo about each services
 const Cards = () => {
@@ -90,60 +86,6 @@ const Cards = () => {
           consequuntur sed excepturi dolor,
         </Card.Body>
       </Card>
-      <br />
-      <br />
-      <div>
-        <Accordion defaultActiveKey="0">
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                Police Station
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
-                <PoliceStation />
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                Fire Station
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="1">
-              <Card.Body>
-                <h1>Hello</h1>
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                Libraries
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="2">
-              <Card.Body>
-                <Libraries />
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-          <Card>
-            <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="3">
-                Rec Centers
-              </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="3">
-              <Card.Body>
-                <RecCenter />
-              </Card.Body>
-            </Accordion.Collapse>
-          </Card>
-        </Accordion>
-      </div>
     </div>
   );
 };

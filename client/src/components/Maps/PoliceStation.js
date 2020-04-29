@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
 
 // Followed a toturial from Leigh Halliday youtube channel
-export default function PoliceStation() {
+const PoliceStation = () => {
   const [viewport, setViewport] = useState({
     latitude: 38.9864713,
     longitude: -76.9562744,
@@ -23,4 +23,6 @@ export default function PoliceStation() {
       ></ReactMapGL>
     </div>
   );
-}
+};
+
+export default PoliceStation;
