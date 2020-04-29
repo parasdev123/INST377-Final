@@ -1,6 +1,9 @@
 import React from "react";
 import { Card, CardGroup, Accordion, Button } from "react-bootstrap";
 import PoliceStation from "../components/Maps/PoliceStation";
+import FireStation from "../components/Maps/FireStation";
+import Libraries from "../components/Maps/Libraries";
+import RecCenter from "../components/Maps/RecCenter";
 
 // Replace Lorem words with facts and imfo about each services
 const Cards = () => {
@@ -110,7 +113,9 @@ const Cards = () => {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
-              <Card.Body>Map of Fire Station</Card.Body>
+              <Card.Body>
+                <h1>Hello</h1>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
@@ -120,7 +125,9 @@ const Cards = () => {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="2">
-              <Card.Body>Map of Libraries</Card.Body>
+              <Card.Body>
+                <Libraries />
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
@@ -130,7 +137,9 @@ const Cards = () => {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="3">
-              <Card.Body>Map of Rec Centers</Card.Body>
+              <Card.Body>
+                <RecCenter />
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
         </Accordion>
