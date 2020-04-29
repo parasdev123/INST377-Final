@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardGroup, Accordion, Button } from "react-bootstrap";
+import PoliceStation from "../components/Maps/PoliceStation";
 
 // Replace Lorem words with facts and imfo about each services
 const Cards = () => {
@@ -97,7 +98,9 @@ const Cards = () => {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
-              <Card.Body>Map of Police Station</Card.Body>
+              <Card.Body>
+                <PoliceStation />
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
