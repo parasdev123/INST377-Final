@@ -1,27 +1,26 @@
-import React from "react";
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import React, { useState } from "react";
+import ReactMapGL from "react-map-gl";
 
 // Followed a toturial from Leigh Halliday youtube channel
-function Map() {
+export default function PoliceStation() {
+  const [viewport, setViewport] = useState({
+    latitude: 38.9864713,
+    longitude: -76.9562744,
+    zoom: 12,
+    width: "100vw",
+    height: "75vh",
+  });
+
   return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: -34.397, lng: 150.644 }}
-    />
+    <div>
+      <ReactMapGL
+        {...viewport}
+        mapboxApiAccessToken="pk.eyJ1IjoicGFyYXNkZXYiLCJhIjoiY2s5a3E2bXA5MDN0NjNscG1yejh2aXNhcSJ9._xNqZGODCSdwe4TxxWxNpA"
+        mapStyle="mapbox://styles/parasdev/ck9kqpmc40bco1iol9b5eme8j"
+        onViewportChange={(viewport) => {
+          setViewport(viewport);
+        }}
+      ></ReactMapGL>
+    </div>
   );
 }
-
-const WrappeddMap = withScriptjs(withGoogleMap(Map));
-
-const PoliceStation = () => {
-  return (
-    <WrappeddMap
-      googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyA5hnuNvG4Rpo_4RwZ5-NxEUO9RSaFbyCM`}
-      loadingElement={<div style={{ height: `100%` }} />}
-      containerElement={<div style={{ height: `400px` }} />}
-      mapElement={<div style={{ height: `100%` }} />}
-    />
-  );
-};
-
-export default PoliceStation;

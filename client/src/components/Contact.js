@@ -2,10 +2,9 @@ import React from "react";
 import { Form, Button, Fade } from "react-bootstrap";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 
-
-// Worked with code sniplets from react-bootstrap to make the froms and a bit of youtube totural videos 
+// Worked with code sniplets from react-bootstrap to make the froms and a bit of youtube totural videos
 // Wanted to hooke it up with a backend server to an email, if extra time avaliable that is the next thing to do
-// Can also clean up the code a bit more, there is definately a more efficent way to make this form. 
+// Can also clean up the code a bit more, there is definately a more efficent way to make this form.
 
 class Contact extends React.Component {
   constructor(props) {
@@ -53,12 +52,6 @@ class Contact extends React.Component {
       message: "",
       chars_left: 1000,
     });
-
-    const userResponse = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message,
-    };
 
     this.setState({
       alert: (
