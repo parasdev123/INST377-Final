@@ -18,8 +18,8 @@ const app = express();
 
 // Servers are often subject to the whims of their environment.
 // Here, if our server has a PORT defined in its environment, it will use that.
-// Otherwise, it will default to port 3000
-const port = process.env.PORT || 3000;
+// Otherwise, it will default to port 5500
+const port = process.env.PORT || 5500;
 
 // Our server needs certain features - like the ability to send and read JSON
 app.use(express.urlencoded({ extended: true }));
