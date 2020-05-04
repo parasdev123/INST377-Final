@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class PoliceApi extends Component {
   constructor(props) {
@@ -10,18 +11,18 @@ class PoliceApi extends Component {
   }
 
   componentDidMount() {
-    fetch("https://data.princegeorgescountymd.gov/resource/qkn8-5mhu.json")
-      .then((res) => res.json())
-      .then((json) => {
-        this.setState({
-          isLoaded: true,
-          items: json,
-        });
+    const url = `http://localhost:5500/api`;
+    axios.get(url).then((res) => {
+      this.setState({
+        isLoaded: true,
+        items: res.data.data,
       });
+    });
   }
 
   render() {
     const { isLoaded, items } = this.state;
+    console.log(items);
 
     if (!isLoaded) {
       return <div>Loading</div>;
@@ -30,10 +31,7 @@ class PoliceApi extends Component {
         <div className="App">
           <ul>
             {items.map((items) => (
-              <li key={items.station_name}>
-                {items.station_address.latitude},
-                {items.station_address.longitude}
-              </li>
+              <li key={items.station_name}>{items[0]}</li>
             ))}
             ;
           </ul>
