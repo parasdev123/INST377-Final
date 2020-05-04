@@ -23,14 +23,6 @@ class App extends React.Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/pages/about" component={About} />
               <Route exact path="/pages/contactus" component={ContactUs} />
-              <Route
-                exact
-                path="/maps/policestation"
-                component={PoliceStation}
-              />
-              <Route exact path="/maps/firestation" component={FireStation} />
-              <Route exact path="/maps/libraries" component={Libraries} />
-              <Route exact path="/maps/reccenter" component={RecCenter} />
               <Route component={NoMatch} /> }
             </Switch>
           </Router>

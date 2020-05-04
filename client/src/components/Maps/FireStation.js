@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import ReactMapGL from "react-map-gl";
 import { Container, Row, Col } from "react-bootstrap";
 
-
 // Followed a toturial from Leigh Halliday youtube channel
 export default function FireStation() {
   const [viewport, setViewport] = useState({
     latitude: 38.9864713,
     longitude: -76.9562744,
-    zoom: 12,
+    zoom: 15,
     width: "70vw",
     height: "75vh",
   });

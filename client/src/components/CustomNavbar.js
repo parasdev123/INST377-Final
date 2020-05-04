@@ -17,12 +17,6 @@ class CustomNavbar extends React.Component {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/maps/policestation">Police Station</Nav.Link>
-            <Nav.Link href="/maps/firestation">Fire Station</Nav.Link>
-            <Nav.Link href="/maps/libraries">Libraries</Nav.Link>
-            <Nav.Link href="/maps/reccenter">Rec Centers</Nav.Link>
-          </Nav>
-          <Nav>
             <Nav.Link href="/pages/about">About</Nav.Link>
             <Nav.Link href="/pages/contactus">Contact Us</Nav.Link>
           </Nav>

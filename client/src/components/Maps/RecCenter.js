@@ -7,7 +7,7 @@ export default function RecCenter() {
   const [viewport, setViewport] = useState({
     latitude: 38.9864713,
     longitude: -76.9562744,
-    zoom: 12,
+    zoom: 5,
     width: "70vw",
     height: "75vh",
   });
