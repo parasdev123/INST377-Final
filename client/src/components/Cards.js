@@ -1,5 +1,10 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
+import "./Cards.css";
+import police from "./images/police.jpg";
+import fire from "./images/fire.jpg";
+import library from "./images/library.jpg";
+import rec from "./images/rec.jpg";
 
 // Replace Lorem words with facts and imfo about each services
 const Cards = () => {
@@ -8,36 +13,36 @@ const Cards = () => {
       <Card className="text-center" border="light">
         <Card.Header>
           <h4>
-            <strong>Public Services Avaliable to PG County</strong>
+            <strong>Prince George's County Public Services</strong>
           </h4>
         </Card.Header>
         <br />
         <CardGroup>
           <Card border="light">
             <div className="card-image">
-              {/* <Card.Img variant="top" src={design} alt="design image" />  */}
+              <Card.Img variant="top" src={police} alt="police image" />
             </div>
             <Card.Body>
+              <br />
               <Card.Title className="title">Police Station</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-                suscipit ab labore, pariatur animi, laudantium, repudiandae
-                ipsam quaerat libero nemo amet accusantium. Expedita deleniti a
-                tempora repellat omnis ex cumque?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                sit, voluptas sequi consectetur excepturi voluptates provident
+                voluptate aspernatur omnis molestias?
               </Card.Text>
             </Card.Body>
           </Card>
           <Card border="light">
             <div className="card-image">
-              {/* <Card.Img variant="top" src={design} alt="design image" /> */}
+              <Card.Img variant="top" src={fire} alt="design image" />
             </div>
             <Card.Body>
+              <br />
               <Card.Title className="title">Fire Station</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veritatis dolore eius, laborum est sequi deleniti ea vitae
-                tempora laudantium, quasi, amet dolorum aperiam! Tenetur
-                laboriosam qui est maxime labore ipsa.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                sit, voluptas sequi consectetur excepturi voluptates provident
+                voluptate aspernatur omnis molestias?
               </Card.Text>
             </Card.Body>
           </Card>
@@ -46,36 +51,34 @@ const Cards = () => {
           <br />
           <Card border="light">
             <div className="card-image">
-              {/* <Card.Img variant="top" src={build} alt="build image" /> */}
+              <Card.Img variant="top" src={library} alt="build image" />
             </div>
             <Card.Body>
+              <br />
               <Card.Title className="title">Libraries</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-                cupiditate veritatis iste nostrum ducimus dolor repudiandae
-                officia. Suscipit, itaque error reiciendis ad, adipisci
-                doloribus numquam natus ex veniam quod quos.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                sit, voluptas sequi consectetur excepturi voluptates provident
+                voluptate aspernatur omnis molestias?
               </Card.Text>
             </Card.Body>
           </Card>
           <Card border="light">
             <div className="card-image">
-              {/* <Card.Img variant="top" src={launch} alt="Launch image" /> */}
+              <Card.Img variant="top" src={rec} alt="Launch image" />
             </div>
             <Card.Body>
-              <Card.Title className="title">Rec Centers</Card.Title>
+              <br />
+              <Card.Title className="title">Launch</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                similique nam veritatis dolor maxime, ullam architecto incidunt
-                laudantium sint quibusdam molestias ea corporis numquam
-                voluptates iste, optio, earum debitis pariatur.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                sit, voluptas sequi consectetur excepturi voluptates provident
+                voluptate aspernatur omnis molestias?
               </Card.Text>
             </Card.Body>
           </Card>
         </CardGroup>
       </Card>
-      <br />
-      <br />
       <Card>
         <Card.Body>
           <h1>Talk about what we want. </h1> Lorem ipsum dolor sit amet

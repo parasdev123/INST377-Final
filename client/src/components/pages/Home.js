@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import Cards from "../Cards";
-import PoliceApi from "../Maps/PoliceApi";
 import PoliceStation from "../Maps/PoliceStation";
 import FireStation from "../Maps/FireStation";
 import Library from "../Maps/Libraries";
 import RecCenter from "../Maps/RecCenter";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import banner from "../images/banner.jpg";
 
 class Home extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      map: null,
+      map: <PoliceStation />,
     };
   }
   render() {
@@ -20,12 +20,20 @@ class Home extends Component {
       <div>
         <br />
         <br />
-        <h1>Add a image or a banner here</h1>
+        <Image src={banner} fluid />
+        <br />
+        <br />
+        <hr
+          style={{
+            color: "#F8F8F8",
+            height: 7,
+          }}
+        />
         <br />
         <br />
         <Cards />
         <br />
-        <div class="large ui buttons">
+        <div class=" fluid ui buttons">
           <button
             class="ui button"
             onClick={() =>
@@ -67,7 +75,11 @@ class Home extends Component {
             Recreation Center
           </button>
         </div>
-        {this.state.map}
+        <Container fluid>
+          <Row>
+            <Col> {this.state.map}</Col>
+          </Row>
+        </Container>
       </div>
     );
   }

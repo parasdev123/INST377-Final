@@ -1,0 +1,11 @@
+.card-image {
+  max-width: 200px;
+  height: 130px;
+  padding: 5%;
+
+  align-self: center;
+}
+
+.title {
+  text-align: center;
+}
