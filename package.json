@@ -2,6 +2,10 @@
   "name": "INST377-Final",
   "version": "1.0.0",
   "description": "A webserver to pull PG county data and push it to a the front end",
+  "engines": {
+    "node": "13.7.0",
+    "npm": "6.13.6"
+  },
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
