@@ -1,6 +1,7 @@
 import React from "react";
 import Contact from "../Contact";
 import { Container, Row, Col } from "react-bootstrap";
+import PageFooter from "../PageFooter";
 
 const ContactUs = () => {
   return (
@@ -14,6 +15,13 @@ const ContactUs = () => {
           </Col>
         </Row>
       </Container>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <PageFooter />
     </div>
   );
 };

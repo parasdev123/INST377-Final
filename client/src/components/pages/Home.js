@@ -6,6 +6,7 @@ import Library from "../Maps/Libraries";
 import RecCenter from "../Maps/RecCenter";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import banner from "../images/banner.jpg";
+import PageFooter from "../PageFooter";
 
 class Home extends Component {
   constructor(props) {
@@ -80,6 +81,10 @@ class Home extends Component {
             <Col> {this.state.map}</Col>
           </Row>
         </Container>
+
+        <br />
+        <br />
+        <PageFooter />
       </div>
     );
   }

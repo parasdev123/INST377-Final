@@ -79,16 +79,23 @@ const Cards = () => {
           </Card>
         </CardGroup>
       </Card>
-      <Card>
+      <br />
+      <br />
+      <Card className="text-center">
+        <Card.Header as="h1">Research Question</Card.Header>
         <Card.Body>
-          <h1>Talk about what we want. </h1> Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. At, praesentium repudiandae, beatae quia
-          consequuntur ratione debitis sequi quam dicta cumque iste asperiores
-          officia. Magni aliquid repellat sed id praesentium vel. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Quod eligendi ipsa
-          consequuntur sed excepturi dolor,
+          <Card.Text as="h5">
+            The problem that we focused on as a group is to build an interactive
+            map that utilizes the locations of libraries, recreation centers,
+            fire stations, and police stations within Prince George’s (PG)
+            county. Many of us have actually observed in our own communities
+            that there may be an unequal distribution in public services which
+            of course limits access for many people.
+          </Card.Text>
         </Card.Body>
       </Card>
+      <br />
+      <br />
     </div>
   );
 };
