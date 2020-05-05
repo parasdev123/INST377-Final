@@ -89,7 +89,7 @@ function processDataForFrontEnd(req, res) {
     });
 }
 
-// Getting the build form front end
+// // Getting the build form front end
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
