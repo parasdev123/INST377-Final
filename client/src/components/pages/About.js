@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
+import PageFooter from "../PageFooter";
 
 const About = () => {
   return (
@@ -67,6 +68,9 @@ const About = () => {
           </Card>
         </CardDeck>
       </div>
+      <br />
+      <br />
+      <PageFooter />
     </div>
   );
 };
