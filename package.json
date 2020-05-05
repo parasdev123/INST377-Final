@@ -1,5 +1,5 @@
 {
-  "name": "INST377-Final",
+  "name": "inst377-final",
   "version": "1.0.0",
   "description": "A webserver to pull PG county data and push it to a the front end",
   "engines": {
