@@ -89,6 +89,11 @@ function processDataForFrontEnd(req, res) {
     });
 }
 
+// Getting the build form front end
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
 // by typing in: localhost:3000/api or 127.0.0.1:3000/api
