@@ -6,10 +6,6 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import ContactUs from "./components/pages/ContactUs";
 import NoMatch from "./components/pages/NoMatch";
-import PoliceStation from "./components/Maps/PoliceStation";
-import FireStation from "./components/Maps/FireStation";
-import Libraries from "./components/Maps/Libraries";
-import RecCenter from "./components/Maps/RecCenter";
 import CustomNavbar from "./components/CustomNavbar";
 
 class App extends React.Component {
