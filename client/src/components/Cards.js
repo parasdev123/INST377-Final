@@ -26,9 +26,10 @@ const Cards = () => {
               <br />
               <Card.Title className="title">Police Station</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                sit, voluptas sequi consectetur excepturi voluptates provident
-                voluptate aspernatur omnis molestias?
+                Police Stations provide a safety to the community it protects.
+                If there is a crime the people can just head over to the police
+                station to file a report. Thus, there should be a police station
+                close to every neighborhood.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -40,9 +41,9 @@ const Cards = () => {
               <br />
               <Card.Title className="title">Fire Station</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                sit, voluptas sequi consectetur excepturi voluptates provident
-                voluptate aspernatur omnis molestias?
+                Fire Stations also provide safety to its commuity. If there are
+                accidents the firemen need to be able to get to the scene to
+                help.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -57,9 +58,10 @@ const Cards = () => {
               <br />
               <Card.Title className="title">Libraries</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                sit, voluptas sequi consectetur excepturi voluptates provident
-                voluptate aspernatur omnis molestias?
+                Libraries are important because it provides abundance of
+                resources people may not have home. It provides books, conputer
+                use, useful classes and much more services. There has to be a
+                library close to each neighborhood.
               </Card.Text>
             </Card.Body>
           </Card>
