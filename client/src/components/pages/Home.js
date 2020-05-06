@@ -77,6 +77,10 @@ class Home extends Component {
             Recreation Center
           </button>
         </div>
+        <br />
+        <br />
+        <br />
+
         <Container fluid>
           <Row>
             <Col> {this.state.map}</Col>

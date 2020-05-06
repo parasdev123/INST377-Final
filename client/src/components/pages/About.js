@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, CardDeck } from "react-bootstrap";
 import PageFooter from "../PageFooter";
-
 const About = () => {
   return (
     <div>
@@ -43,7 +42,7 @@ const About = () => {
       <br />
       <div
         style={{ width: "52rem", marginLeft: "auto", marginRight: "auto" }}
-        class="lower-card"
+        className="lower-card"
       >
         <CardDeck>
           <Card border="dark" style={{ width: "18rem" }}>
