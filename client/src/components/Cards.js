@@ -71,11 +71,10 @@ const Cards = () => {
             </div>
             <Card.Body>
               <br />
-              <Card.Title className="title">Launch</Card.Title>
+              <Card.Title className="title">Recreation Centers</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                sit, voluptas sequi consectetur excepturi voluptates provident
-                voluptate aspernatur omnis molestias?
+                Recreation and Community Centers provide a place for people to
+                have fun and participate in sports.
               </Card.Text>
             </Card.Body>
           </Card>
