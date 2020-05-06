@@ -12,6 +12,7 @@
 const express = require("express");
 const fetch = require("node-fetch");
 const cors = require("cors");
+const path = require("path");
 
 // Here we instantiate the server we're going to turn on
 const app = express();
@@ -89,16 +90,20 @@ function processDataForFrontEnd(req, res) {
     });
 }
 
-// // Getting the build form front end
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
-
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
 // by typing in: localhost:3000/api or 127.0.0.1:3000/api
 app.get("/api", (req, res) => {
   processDataForFrontEnd(req, res);
 });
+
+// dont delete, serve static assets if in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
