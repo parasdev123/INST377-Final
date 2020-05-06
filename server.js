@@ -183,7 +183,7 @@ app.get("/fireStations", (req, res) => {
 
 function processDataForFrontEndLibraries(req, res) {
   const baseURL =
-  "https://data.princegeorgescountymd.gov/resource/7k64-tdwr.json";
+    "https://data.princegeorgescountymd.gov/resource/7k64-tdwr.json";
 
   // Your Fetch API call starts here
   fetch(baseURL)
@@ -208,4 +208,38 @@ function processDataForFrontEndLibraries(req, res) {
 // by typing in: localhost:5500/libraries or 127.0.0.1:5500/libraries
 app.get("/libraries", (req, res) => {
   processDataForFrontEndLibraries(req, res);
+});
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// new api fetch for rec centers
+
+function processDataForFrontEndRecreation(req, res) {
+  const baseURL =
+    "https://data.princegeorgescountymd.gov/resource/gwq4-iu9d.json";
+
+  // Your Fetch API call starts here
+  fetch(baseURL)
+    .then((data) => data.json())
+    .then((data) => {
+      const refined = data.map((m) => ({
+        name: m.name,
+        lat: m.address.latitude,
+        long: m.address.longitude,
+      }));
+      // console.log(refined);
+      return refined;
+    })
+    .then((data) => {
+      console.log(data);
+      res.send({ data: data }); // here's where we return data to the front end
+    });
+}
+
+// This is our first route on our server.
+// To access it, we can use a "GET" request on the front end
+// by typing in: localhost:5500/recreation or 127.0.0.1:5500/recreation
+app.get("/recreation", (req, res) => {
+  processDataForFrontEndRecreation(req, res);
 });
