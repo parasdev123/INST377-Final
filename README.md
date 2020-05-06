@@ -37,7 +37,7 @@ May need to install dependencies if the libraries do not import
 do "npm install" on the main folder to install all dependencies for backend
 
 Then go to terminal and cd client then do "npm install" to install all dependencies for frontend
-then wait a few minutes to finish installing everythin
+then wait a few minutes to finish installing everything
 
 
 To start both the server and react fronend do "npm run dev" on the main home folder.

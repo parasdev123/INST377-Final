@@ -107,3 +107,105 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// new api fetch for police stations
+
+function processDataForFrontEndPoliceStations(req, res) {
+  const baseURL =
+    "https://data.princegeorgescountymd.gov/resource/qkn8-5mhu.json";
+
+  // Your Fetch API call starts here
+  fetch(baseURL)
+    .then((data) => data.json())
+    .then((data) => {
+      const refined = data.map((m) => ({
+        name: m.station_name,
+        lat: m.station_address.latitude,
+        long: m.station_address.longitude,
+      }));
+      // console.log(refined);
+      return refined;
+    })
+    .then((data) => {
+      console.log(data);
+      res.send({ data: data }); // here's where we return data to the front end
+    });
+}
+
+// This is our first route on our server.
+// To access it, we can use a "GET" request on the front end
+// by typing in: localhost:5500/api or 127.0.0.1:5500/api
+app.get("/policeStations", (req, res) => {
+  processDataForFrontEndPoliceStations(req, res);
+});
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// new api fetch for fire stations
+
+function processDataForFrontEndFireStations(req, res) {
+  const baseURL =
+    "https://data.princegeorgescountymd.gov/resource/bzf2-94qx.json";
+
+  // Your Fetch API call starts here
+  fetch(baseURL)
+    .then((data) => data.json())
+    .then((data) => {
+      const refined = data.map((m) => ({
+        name: m.station_name,
+        lat: m.location_1.latitude,
+        long: m.location_1.longitude,
+      }));
+      // console.log(refined);
+      return refined;
+    })
+    .then((data) => {
+      console.log(data);
+      res.send({ data: data }); // here's where we return data to the front end
+    });
+}
+
+// This is our first route on our server.
+// To access it, we can use a "GET" request on the front end
+// by typing in: localhost:5500/fireStations or 127.0.0.1:5500/fireStations
+app.get("/fireStations", (req, res) => {
+  processDataForFrontEndFireStations(req, res);
+});
+
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
+// new api fetch for libraries
+
+function processDataForFrontEndLibraries(req, res) {
+  const baseURL =
+  "https://data.princegeorgescountymd.gov/resource/7k64-tdwr.json";
+
+  // Your Fetch API call starts here
+  fetch(baseURL)
+    .then((data) => data.json())
+    .then((data) => {
+      const refined = data.map((m) => ({
+        name: m.branch_name,
+        lat: m.location_1.latitude,
+        long: m.location_1.longitude,
+      }));
+      // console.log(refined);
+      return refined;
+    })
+    .then((data) => {
+      console.log(data);
+      res.send({ data: data }); // here's where we return data to the front end
+    });
+}
+
+// This is our first route on our server.
+// To access it, we can use a "GET" request on the front end
+// by typing in: localhost:5500/libraries or 127.0.0.1:5500/libraries
+app.get("/libraries", (req, res) => {
+  processDataForFrontEndLibraries(req, res);
+});
