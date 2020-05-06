@@ -43,3 +43,25 @@ then wait a few minutes to finish installing everythin
 To start both the server and react fronend do "npm run dev" on the main home folder.
 
 go to http://localhost:5500/api
+
+
+Things that worked well
+        worked with a react map gl library to host a proper map and add locations
+
+        Learned to use the bootstrap library to create a good looking fornt end user interface
+
+        Learned to use states in react to create user interactions such as toggle, and navbars
+
+Failures
+
+        Creating a way to have all the map details be one view was a failure, it did not work well
+
+        Tried to hook the contact us page to send the name, email, and message to a email server in the backedn, but it would not build properly
+
+Technology Used:
+
+        React with many react libraries:
+                axios - to retrieve data from the backend
+                react-map-gl - to host a map and plot points
+                Semantic-Ui - to create the navbar and many other ui elements
+
