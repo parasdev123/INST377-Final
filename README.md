@@ -42,7 +42,6 @@ then wait a few minutes to finish installing everything
 
 To start both the server and react fronend do "npm run dev" on the main home folder.
 
-go to http://localhost:5500/api
 
 
 Things that worked well
