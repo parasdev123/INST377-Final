@@ -7,15 +7,30 @@ const path = require("path");
 
 // Here we instantiate the server we're going to turn on
 const app = express();
-// app.use(cors());
+app.use(cors());
 
-// app.get("/products/:id", function (req, res, next) {
-//   res.json({ msg: "This is CORS-enabled for all origins!" });
-// });
+app.get("/products/:id", function (req, res, next) {
+  res.json({ msg: "This is CORS-enabled for all origins!" });
+});
 
-// app.listen(80, function () {
-//   console.log("CORS-enabled web server listening on port 80");
-// });
+app.listen(80, function () {
+  console.log("CORS-enabled web server listening on port 80");
+});
+
+// if (process.env.NODE_ENV !== "production") {
+//   const whitelist = [undefined, "http://localhost:3000"];
+//   let corsOptions = {
+//     origin: (origin, callback) => {
+//       if (whitelist.indexOf(origin) !== -1) {
+//         callback(null, true);
+//       } else {
+//         callback(new Error("URL not whitelisted"));
+//       }
+//     },
+//   };
+
+//   app.use(cors(corsOptions));
+// }
 // Servers are often subject to the whims of their environment.
 // Here, if our server has a PORT defined in its environment, it will use that.
 // Otherwise, it will default to port 5500
@@ -72,7 +87,7 @@ function processDataForFrontEndPoliceStations(req, res) {
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
 // by typing in: localhost:5500/api or 127.0.0.1:5500/api
-app.get("/policeStations", (req, res) => {
+app.get("/policestations", (req, res) => {
   processDataForFrontEndPoliceStations(req, res);
 });
 
@@ -109,7 +124,7 @@ function processDataForFrontEndFireStations(req, res) {
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
 // by typing in: localhost:5500/fireStations or 127.0.0.1:5500/fireStations
-app.get("/fireStations", (req, res) => {
+app.get("/firestations", (req, res) => {
   processDataForFrontEndFireStations(req, res);
 });
 
