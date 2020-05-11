@@ -9,7 +9,7 @@ Description of Target Browser:
  This webpage works with Chrome, Firefox, Safari, and Edge.
 
 Link to user Manuel:
-User Manuel in the doc folder.
+ User Manuel in the doc folder.
 
 Link to Developer Manuel:
 
