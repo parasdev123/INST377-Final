@@ -20,6 +20,21 @@ const app = express();
 // Servers are often subject to the whims of their environment.
 // Here, if our server has a PORT defined in its environment, it will use that.
 // Otherwise, it will default to port 5500
+
+if (process.env.NODE_ENV !== "production") {
+  const whitelist = [undefined, "http://localhost:3000"];
+  let corsOptions = {
+    origin: (origin, callback) => {
+      if (whitelist.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error("URL not whitelisted"));
+      }
+    },
+  };
+
+  app.use(cors(corsOptions));
+}
 const port = process.env.PORT || 5500;
 
 // Our server needs certain features - like the ability to send and read JSON

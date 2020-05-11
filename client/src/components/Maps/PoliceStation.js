@@ -22,7 +22,7 @@ export default class PoliceStation extends Component {
     };
   }
   componentDidMount() {
-    let domain = "";
+    const domain = "";
 
     if (process.env.NODE_ENV !== "production") {
       domain = "http://localhost:5500";
