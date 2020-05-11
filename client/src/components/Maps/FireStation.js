@@ -27,7 +27,7 @@ export default class PoliceStation extends Component {
     if (process.env.NODE_ENV !== "production") {
       domain = "http://localhost:5500";
     }
-    axios.get(domain + "/firestations").then((res) => {
+    axios.get(domain + "/fireStations").then((res) => {
       this.setState({
         items: res.data.data,
       });

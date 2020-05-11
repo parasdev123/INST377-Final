@@ -190,5 +190,5 @@ app.get("/recreation", (req, res) => {
 
 // pings app every 5 minutes
 setInterval(() => {
-  http.get("http://unichative.herokuapp.com");
+  http.get("https://pg-service.herokuapp.com/");
 }, 300000);
