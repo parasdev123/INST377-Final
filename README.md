@@ -1,4 +1,4 @@
-## ReadMe
+# ReadMe
 
 #### Title:
 
@@ -22,7 +22,9 @@
 
 #### Link to Developer Manuel:
 
-## Developer Manuel
+- [Link to Developer Manuel](#developer-manuel)
+
+# Developer Manuel
 
 #### How to install your application and all dependencies?
 
