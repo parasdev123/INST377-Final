@@ -10,4 +10,4 @@
 
 3. It should be written in clear, plain, non-technical language.
 
-- (Type answer here)
+- - (Type answer here)
