@@ -22,8 +22,12 @@ export default class PoliceStation extends Component {
     };
   }
   componentDidMount() {
-    const url = `http://localhost:5500/firestations`;
-    axios.get(url).then((res) => {
+    let domain = "";
+
+    if (process.env.NODE_ENV !== "production") {
+      domain = "http://localhost:5500";
+    }
+    axios.get(domain + "/firestations").then((res) => {
       this.setState({
         items: res.data.data,
       });

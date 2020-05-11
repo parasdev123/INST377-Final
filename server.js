@@ -4,6 +4,7 @@ const express = require("express");
 const fetch = require("node-fetch");
 const cors = require("cors");
 const path = require("path");
+const http = require("http");
 
 // Here we instantiate the server we're going to turn on
 const app = express();
@@ -186,3 +187,8 @@ function processDataForFrontEndRecreation(req, res) {
 app.get("/recreation", (req, res) => {
   processDataForFrontEndRecreation(req, res);
 });
+
+// pings app every 5 minutes
+setInterval(() => {
+  http.get("http://unichative.herokuapp.com");
+}, 300000);
