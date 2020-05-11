@@ -2,37 +2,29 @@
 
 This rest of the document is a brief description of your final presentation.
 
-Title
-        
-Team members
+1. Title
 
+2. Team members
 
-Link to where your app is running
+3. Link to where your app is running
 
+- [link to Heroku Webpage!](https://pg-service.herokuapp.com/)
 
-Information problem you're trying to solve
+4. Information problem you're trying to solve
 
+5. Identified stakeholders/target browsers
 
-Identified stakeholders/target browsers
+6. Data you chose to work with
 
+7. Chosen strategies and solutions for the problem
 
-Data you chose to work with
+8. Technical system decision rationale
 
+9. How/if your final system helps to address the problem
 
-Chosen strategies and solutions for the problem
+10. Challenges faced and impact on final design
 
-
-Technical system decision rationale
-
-
-How/if your final system helps to address the problem
-
-
-Challenges faced and impact on final design
-
-
-Possible future work directions with this problem
-
+11. Possible future work directions with this problem
 
 Documentation needs to be written in Markdown (MD) files, nicely formatted
 Documentation should be included to each team’s final code submission.
