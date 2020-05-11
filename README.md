@@ -1,3 +1,5 @@
+## ReadMe
+
 Title:
 
 Description of Project:
@@ -16,7 +18,7 @@ Link to user Manuel:
 
 Link to Developer Manuel:
 
-                            Developer Manuel
+## Developer Manuel
 
 How to install your application and all dependencies?
 
