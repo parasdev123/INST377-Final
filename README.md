@@ -6,6 +6,8 @@
 
 #### Description of Project:
 
+- We are creating an interactive map that plots the location of libraries, recreation centers, fire stations, and police stations within Prince George’s (PG) county. We want to explore how these facilities are allocated in order to determine if the people of PG county have similar services and access. We want to see if there are certain neighborhoods in PG county that are underrepresented. With this tool, we hope to highlight any inconsistencies and help the county make better decisions regarding future projects.
+
 #### Link to Heroku:
 
 - [Link to Heroku Webpage!](https://pg-service.herokuapp.com/)
@@ -16,7 +18,7 @@
 
 #### Link to user Manuel:
 
-- User Manuel in the doc folder. [Link to User Manuel](/docs/user.md)
+- [Link to User Manuel](/docs/user.md)
 
 #### Link to Developer Manuel:
 
