@@ -8,7 +8,7 @@ This rest of the document is a brief description of your final presentation.
 
 #### Link to where your app is running
 
-- [link to Heroku Webpage!](https://pg-service.herokuapp.com/)
+- [Link to Heroku Webpage!](https://pg-service.herokuapp.com/)
 
 #### Information problem you're trying to solve
 
