@@ -32,7 +32,7 @@
 
 #### How to run your application on a server
 
-- After all the dependencies are installed, do "cd .." to go back to the main folder. Then to run the webpage type on your local machine server type "npm run dev". This starts both the server for the backend and the react scripts for the frontend, and will launch the page on port 3000/5500
+- After all the dependencies are installed, do "cd .." to go back to the main folder. Then to run the webpage type on your local machine server type "npm run dev". This starts both the server for the backend and the react scripts for the frontend, and will launch the page on port 3000/5000
 
 #### How to run any tests you have written for your software
 
@@ -40,7 +40,15 @@
 
 #### The API for your server application - all GET, POST, PUT, etc endpoints, and what they each do
 
-- Our backend servers uses GET, LISTEN, and FETCH in order to support the front end. We used the LISTEN request to confirm that our server is up and running and using the correct port. We have four GET request corresponding with the four different pages. Each page reprsent data from one set of the PG county such as /policeStations. Once called upon, these GET requests make a call to the respective function in order to FETCH the data from PG county, edit it to display the clean & useful information, and send the data to the front end.
+- Our backend servers uses GET, LISTEN, and FETCH in order to support the front end. We used the LISTEN request to confirm that our server is up and running and using the correct port. We have four GET request corresponding with the four different pages. Each page reprsent data from one set of the PG county.
+
+- /policeStations makes a call to the correct function in the server inorder to FETCH the data from PG county, edit it to display the clean & useful information, and send the data to the front end. This should produce in the return of the json data of police stations with their names, lat, and long for each department.
+
+- /libraires makes a call to the library function in the server which follows the same process as the police stations. The result is data in a json format that has the name, lat, and long for each library within PG county.
+
+- /fireStations Should result in data that is in a json format. This data has the name, lat, and long for each fire station within PG county.
+
+- /recreation Should result in data that is in a json format. This data has the name, lat, and long for each recreation center in PG county.
 
 #### A clear set of expectations around known bugs and a road-map for future development.
 
