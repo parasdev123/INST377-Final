@@ -39,17 +39,10 @@
 
 #### Technical system decision rationale
 
--HTML
--CSS
--JS
--leaflet
--React
--semantic ui
--Axios 
+- We used react mapbox gl library to host a proper map and add the correct location markers effectively addressing the problem our system was meant to highlight. We also used the semantic Ui/react bootstrap library to create a good looking front-end user interface. 
 
 #### How/if your final system helps to address the problem
--What our final system does to address the problem is it seeks out the locations of the services. Our stakeholders can use our system to address any problems of redistributing the services that they provided in their county more equaly towards the people that live there
-
+- The main problem we sought out to solve/highlight was the inconsistent allocation of facilities within PG county and we believe our system does just that. With our interactive map users are able to see the areas in which necessary facilities like police stations and fire stations are concentrated and where they are not. Users are able to see exactly where these facilities are at any given time which can greatly help with allocation,e.g., postioning recreation centers near K-12 schools or having libraries positoned close to college campuses. 
 
 #### Challenges faced and impact on final design
 
