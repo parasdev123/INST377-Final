@@ -189,7 +189,3 @@ app.get("/recreation", (req, res) => {
   processDataForFrontEndRecreation(req, res);
 });
 
-// pings app every 5 minutes
-setInterval(() => {
-  http.get("https://pg-service.herokuapp.com/");
-}, 300000);
