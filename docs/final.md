@@ -7,6 +7,11 @@ This rest of the document is a brief description of your final presentation.
 - Prince George's Couty Public Service
 
 #### Team members
+- Paras Devkota
+- Eltayeb Abdelrahman
+- Kehinde Akinnuoye
+- TianYi Li
+- Eymen Yagar
 
 
 #### Link to where your app is running
