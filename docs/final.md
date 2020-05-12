@@ -71,4 +71,4 @@
 #### Possible future work directions with this problem
 
 - One possible future work is incorparating this state wide and observing services at a state level and see the differences between counties.
-- Another one is maybe we could dive deeper in the other facilities that are offered
+- Another future work could be to implement a way for the user to locate the closest service to thier location. As the user inputes their location, the application would fetch out the closest, police station, fire station, libraries, and rec centers. This way each user will know how far each public service is from thier location.
