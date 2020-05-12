@@ -4,19 +4,18 @@ const express = require("express");
 const fetch = require("node-fetch");
 const cors = require("cors");
 const path = require("path");
-const http = require("http");
 
 // Here we instantiate the server we're going to turn on
 const app = express();
-// app.use(cors());
+app.use(cors());
 
-// app.get("/products/:id", function (req, res, next) {
-//   res.json({ msg: "This is CORS-enabled for all origins!" });
-// });
+app.get("/products/:id", function (req, res, next) {
+  res.json({ msg: "This is CORS-enabled for all origins!" });
+});
 
-// app.listen(80, function () {
-//   console.log("CORS-enabled web server listening on port 80");
-// });
+app.listen(80, function () {
+  console.log("CORS-enabled web server listening on port 80");
+});
 // Servers are often subject to the whims of their environment.
 // Here, if our server has a PORT defined in its environment, it will use that.
 // Otherwise, it will default to port 5500
@@ -34,7 +33,7 @@ app.use(express.static("public"));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 
-  app.get("*", (req, res) => {
+  app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
   });
 }
@@ -188,4 +187,3 @@ function processDataForFrontEndRecreation(req, res) {
 app.get("/recreation", (req, res) => {
   processDataForFrontEndRecreation(req, res);
 });
-
