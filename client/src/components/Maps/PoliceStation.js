@@ -22,7 +22,7 @@ export default class PoliceStation extends Component {
     };
   }
   componentDidMount() {
-    const url = "http://localhost:5500/policestations";
+    const url = "/policeStations";
     axios.get(url).then((res) => {
       this.setState({
         items: res.data.data,
