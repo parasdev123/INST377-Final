@@ -1,12 +1,11 @@
 # Final Report
 
-This rest of the document is a brief description of your final presentation.
-
 #### Title
 
 - Prince George's Couty Public Service
 
 #### Team members
+
 - Paras Devkota
 - Eltayeb Abdelrahman
 - Kehinde Akinnuoye
@@ -55,7 +54,3 @@ This rest of the document is a brief description of your final presentation.
 
 - One possible future work is incorparating this state wide and observing services at a state level and see the differences between counties.
 - Another one is maybe we could dive deeper in the other facilities that are offered
-
-Documentation needs to be written in Markdown (MD) files, nicely formatted
-Documentation should be included to each team’s final code submission.
-Documentation should be saved in your main project directory under "docs"
