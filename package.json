@@ -21,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/parasdev123/INST377-Final"
   },
-  "license": "CC-BY-SA-4.0",
+  "license": "MIT",
   "dependencies": {
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
