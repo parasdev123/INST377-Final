@@ -48,10 +48,7 @@
 -Axios 
 
 #### How/if your final system helps to address the problem
-Our system addresses the problem through the utilization of these elements:
-- Axios is used to retrieve data from the backend.
-- The React-map-gl is used to host a map as well as plot points.
-- Lastly, the Semantic-ui/bootstrap is used to create the navbar and many other ui elements.
+-What our final system does to address the problem is it seeks out the locations of the services. Our stakeholders can use our system to address any problems of redistributing the services that they provided in their county more equaly towards the people that live there
 
 
 #### Challenges faced and impact on final design
