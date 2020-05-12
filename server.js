@@ -18,7 +18,7 @@ const app = express();
 // });
 // Servers are often subject to the whims of their environment.
 // Here, if our server has a PORT defined in its environment, it will use that.
-// Otherwise, it will default to port 5500
+// Otherwise, it will default to port 5000
 
 const port = process.env.PORT || 5000;
 
@@ -78,7 +78,7 @@ function processDataForFrontEndPoliceStations(req, res) {
 
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
-// by typing in: localhost:5500/api or 127.0.0.1:5500/api
+// by typing in: localhost:5000/api or 127.0.0.1:5000/api
 app.get("/policeStations", (req, res) => {
   processDataForFrontEndPoliceStations(req, res);
 });
@@ -116,7 +116,7 @@ function processDataForFrontEndFireStations(req, res) {
 
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
-// by typing in: localhost:5500/fireStations or 127.0.0.1:5500/fireStations
+// by typing in: localhost:5000/fireStations or 127.0.0.1:5000/fireStations
 app.get("/fireStations", (req, res) => {
   processDataForFrontEndFireStations(req, res);
 });
@@ -153,7 +153,7 @@ function processDataForFrontEndLibraries(req, res) {
 
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
-// by typing in: localhost:5500/libraries or 127.0.0.1:5500/libraries
+// by typing in: localhost:5000/libraries or 127.0.0.1:5000/libraries
 app.get("/libraries", (req, res) => {
   processDataForFrontEndLibraries(req, res);
 });
@@ -190,7 +190,7 @@ function processDataForFrontEndRecreation(req, res) {
 
 // This is our first route on our server.
 // To access it, we can use a "GET" request on the front end
-// by typing in: localhost:5500/recreation or 127.0.0.1:5500/recreation
+// by typing in: localhost:5000/recreation or 127.0.0.1:5000/recreation
 app.get("/recreation", (req, res) => {
   processDataForFrontEndRecreation(req, res);
 });

@@ -40,35 +40,23 @@
 #### Technical system decision rationale
 
 -HTML
-
 -CSS
-
 -JS
-
 -leaflet
-
 -React
-
 -semantic ui
-
 -Axios 
 
 #### How/if your final system helps to address the problem
-
--Axios : to retrieve data from the backend.
-
--React-map-gl: to host a map and plot points.
-
--Semantic-ui/bootstrap: to create the navbar and many other ui elements.
-
+-What our final system does to address the problem is it seeks out the locations of the services. Our stakeholders can use our system to address any problems of redistributing the services that they provided in their county more equaly towards the people that live there
 
 
 #### Challenges faced and impact on final design
 
-- One challange we faced was that when we deployed the webpage on heroku it created some problems. When the webpage was live it would not display any markers on the map. It was having trouble fetching data from the back end, and would cause the map display to break down.
+- One challange we faced was that when we deployed the webpage on heroku it created some problems. When the webpage was live it would not display any markers on the map. It was having trouble fetching data from the back end, and would cause the map display to break down. Through hard work, sweat, tears, and blood we were able to fix this issue! what the hell - Prof. Alex and Stack Overflow.
 - Another challange is that we wanted to hear from any of the people that used the website, and wanted to get insight form them. So, we had a contact us page set up, the user could enter their info and send any message to us. The problem we faced is that we had troube sending the message to an email server.
 
 #### Possible future work directions with this problem
 
 - One possible future work is incorparating this state wide and observing services at a state level and see the differences between counties.
-- Another one is maybe we could dive deeper in the other facilities that are offered
+- Another future work could be to implement a way for the user to locate the closest service to thier location. As the user inputes their location, the application would fetch out the closest, police station, fire station, libraries, and rec centers. This way each user will know how far each public service is from thier location.
