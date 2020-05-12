@@ -40,18 +40,26 @@
 #### Technical system decision rationale
 
 -HTML
+
 -CSS
+
 -JS
+
 -leaflet
+
 -React
+
 -semantic ui
+
 -Axios 
 
 #### How/if your final system helps to address the problem
 
--Axios : to retrieve data from the backend
--React-map-gl: to host a map and plot points
--Semantic-ui/bootstrap: to create the navbar and many other ui elements
+-Axios : to retrieve data from the backend.
+
+-React-map-gl: to host a map and plot points.
+
+-Semantic-ui/bootstrap: to create the navbar and many other ui elements.
 
 
 
