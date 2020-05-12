@@ -20,7 +20,7 @@ const app = express();
 // Here, if our server has a PORT defined in its environment, it will use that.
 // Otherwise, it will default to port 5500
 
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 5000;
 
 // Our server needs certain features - like the ability to send and read JSON
 app.use(express.urlencoded({ extended: true }));
@@ -99,7 +99,8 @@ function processDataForFrontEndFireStations(req, res) {
       return refined;
     })
     .then((data) => {
-      res.send({ data: data }); // here's where we return data to the front end
+      console.log(data);
+      res.json({ data: data }); // here's where we return data to the front end
     })
     .catch((err) => {
       console.log(err);

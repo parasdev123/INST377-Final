@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MapGL, { Marker } from "react-map-gl";
-import axios from "axios";
+// import axios from "axios";
 
 const TOKEN =
   "pk.eyJ1IjoicGFyYXNkZXYiLCJhIjoiY2s5a3E2bXA5MDN0NjNscG1yejh2aXNhcSJ9._xNqZGODCSdwe4TxxWxNpA";
@@ -22,12 +22,13 @@ export default class PoliceStation extends Component {
     };
   }
   componentDidMount() {
-    const url = `http://localhost:5500/firestations`;
-    axios.get(url).then((res) => {
-      this.setState({
-        items: res.data.data,
-      });
-    });
+    // const url = `/firestations`;
+    // axios.get(url).then((res) => {
+    //   this.setState({
+    //     items: res.data.data,
+    //   });
+    // });
+    fetch("/firestations").then((data) => console.log(data.json()));
   }
 
   render() {
