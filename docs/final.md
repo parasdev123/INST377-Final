@@ -19,7 +19,7 @@
 
 #### Information problem you're trying to solve
 
-- (Type answer here)
+- We observe that in our own communities that there may be an unequal distribution in public services which of course limits access for many people. 
 
 #### Identified stakeholders/target browsers
 
@@ -35,15 +35,33 @@
 
 #### Chosen strategies and solutions for the problem
 
-- (Type answer here)
+- we build an interactive map that utilizes the locations of libraries, recreation centers, fire stations, and police stations within Prince George’s (PG) county. 
 
 #### Technical system decision rationale
 
-- (Type answer here)
+-HTML
+
+-CSS
+
+-JS
+
+-leaflet
+
+-React
+
+-semantic ui
+
+-Axios 
 
 #### How/if your final system helps to address the problem
 
-- (Type answer here)
+-Axios : to retrieve data from the backend.
+
+-React-map-gl: to host a map and plot points.
+
+-Semantic-ui/bootstrap: to create the navbar and many other ui elements.
+
+
 
 #### Challenges faced and impact on final design
 
