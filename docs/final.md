@@ -65,7 +65,7 @@
 
 #### Challenges faced and impact on final design
 
-- One challange we faced was that when we deployed the webpage on heroku it created some problems. When the webpage was live it would not display any markers on the map. It was having trouble fetching data from the back end, and would cause the map display to break down.
+- One challange we faced was that when we deployed the webpage on heroku it created some problems. When the webpage was live it would not display any markers on the map. It was having trouble fetching data from the back end, and would cause the map display to break down. Through hard work, sweat, tears, and blood we were able to fix this issue! what the hell - Prof. Alex and Stack Overflow.
 - Another challange is that we wanted to hear from any of the people that used the website, and wanted to get insight form them. So, we had a contact us page set up, the user could enter their info and send any message to us. The problem we faced is that we had troube sending the message to an email server.
 
 #### Possible future work directions with this problem
